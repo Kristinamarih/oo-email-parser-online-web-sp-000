@@ -15,7 +15,7 @@ class EmailParser
     @@emails
   end
   
-  def self.parser
+  def parse
     self.all.each do |email|
     @@emails << @emails.split(" ", ", ").collect |e|
     @@emails
